@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203109194581",
+    "project_id": "kulkasku-9811d",
+    "storage_bucket": "kulkasku-9811d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203109194581:android:8e4fdc112ef15e958d6ddc",
+        "android_client_info": {
+          "package_name": "com.rmdev.kulkasku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203109194581-jrclh739vdaqb4s1kshs2buikfr03cva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxdMVdRqkzaQOzw0Gn5r9nqEI7di5X-hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203109194581-jrclh739vdaqb4s1kshs2buikfr03cva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

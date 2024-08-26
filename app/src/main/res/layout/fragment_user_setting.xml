@@ -1,0 +1,83 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userSettingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".ui.usersetting.UserSettingFragment">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backToHomeButton"
+            android:layout_width="93dp"
+            android:layout_height="83dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back_to_home"
+            android:padding="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Admin Panel Button -->
+        <Button
+            android:id="@+id/buttonAdminPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:visibility="gone"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/backToHomeButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Seller Panel Button -->
+        <Button
+            android:id="@+id/buttonSellerPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seller Panel"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/buttonAdminPanel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Creator Panel Button -->
+        <Button
+            android:id="@+id/buttonCreatorPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Creator Panel"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/buttonSellerPanel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Logout Button -->
+        <ImageButton
+            android:id="@+id/buttonLogout"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_logout"
+            android:contentDescription="@string/logout"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintTop_toBottomOf="@id/buttonCreatorPanel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

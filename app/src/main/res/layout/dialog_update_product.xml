@@ -1,0 +1,108 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- Declare your variables here -->
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Description"/>
+        <EditText
+            android:id="@+id/updateProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Description"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"/>
+        <EditText
+            android:id="@+id/updateProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Price"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Category"/>
+        <Spinner
+            android:id="@+id/updateProductCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Stock"/>
+        <EditText
+            android:id="@+id/updateProductStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Stock"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount"/>
+        <EditText
+            android:id="@+id/updateProductDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tags (comma separated)"/>
+        <EditText
+            android:id="@+id/updateProductTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tags (comma separated)"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight"/>
+        <EditText
+            android:id="@+id/updateProductWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand"/>
+        <EditText
+            android:id="@+id/updateProductBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brand"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/updateSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</layout>

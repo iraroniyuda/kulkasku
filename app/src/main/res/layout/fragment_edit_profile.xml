@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.EditProfileFragment">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_profile" />
+
+    <ImageButton
+        android:id="@+id/changeProfilePictureButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_change_profile_picture"
+        android:contentDescription="@string/change_profile_picture"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nama Anda"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/hint_text_color"
+        android:hint="Masukkan Nama Anda" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nomor Telepon"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nomor Telepon"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/hint_text_color"
+        android:inputType="phone" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_save"
+        android:contentDescription="@string/save"
+        android:scaleType="fitCenter"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your comment"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a comment..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:minLines="3"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp"/>
+
+    <ImageButton
+        android:id="@+id/postCommentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/post_comment"
+        android:layout_gravity="end"
+        android:padding="8dp"/>
+</LinearLayout>
